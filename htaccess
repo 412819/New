@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# যদি ইউজার /admin লিখে, তবে সেটাকে index.php এর মাধ্যমে প্রসেস করো
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^admin(.*)$ index.php [L,QSA]
+
+# সাধারণ রিকোয়েস্টগুলোকেও index.php তে পাঠাও
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
