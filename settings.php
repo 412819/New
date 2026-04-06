@@ -1,6 +1,6 @@
 <?php
 // WhatsApp Number (without +)
-$whatsappNumber = "8801974694241";
+$whatsappNumber = "8801764694241";
 
 // Button Text
 $footerText = "Contact Us";
